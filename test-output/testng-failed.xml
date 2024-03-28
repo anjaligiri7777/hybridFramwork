@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestPackage.LoginTestCase">
+      <class name="com.TestPackage.AdminTestCase">
         <methods>
           <include name="teardown"/>
+          <include name="UserSystem"/>
           <include name="setup"/>
-          <include name="NextOageTitle"/>
         </methods>
-      </class> <!-- com.TestPackage.LoginTestCase -->
+      </class> <!-- com.TestPackage.AdminTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

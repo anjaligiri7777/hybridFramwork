@@ -16,6 +16,7 @@ public class LoginTestCase extends BaseClass {
 	
 	BaseClass base = new BaseClass();
 	public static String childewindow;
+	
 	@BeforeClass
 	public void setup() 
 	{  //super.launchWebSite();
@@ -26,26 +27,26 @@ public class LoginTestCase extends BaseClass {
 	@AfterClass
     public void teardown() 
     {
-    	//driver.close();
+    	driver.close();
     }
-//	@Test
-//	public void getTitle() 
-//	{   
-//		String title = driver.getTitle();
-//		System.out.println(title);
-//		
-//		Assert.assertEquals(title,"OrangeHRM");
-//	}
-//	@Test
-//	public void LoginTest() 
-//	{   
-//		 LoginPagePom login = new  LoginPagePom();
-//		 String username = login.getuser();
-//		 String password = login.getpassword();
-//		 login.setUsername(username);
-//		 login.setPassword(password);
-//		 login.SubmitButton();
-//	}
+	@Test
+	public void getTitle() 
+	{   
+		String title = driver.getTitle();
+		System.out.println(title);
+		
+		Assert.assertEquals(title,"OrangeHRM");
+	}
+	@Test
+	public void LoginTest() 
+	{   
+		 LoginPagePom login = new  LoginPagePom();
+	     String username = login.getuser();
+		 String password = login.getpassword();
+		 login.setUsername(username);
+		 login.setPassword(password);
+		 login.SubmitButton();
+	}
 	@Test
 	public void LoginPageLinkTest() 
 	{    
@@ -66,6 +67,8 @@ public class LoginTestCase extends BaseClass {
 		    	else		    	{
 		    		childewindow= Id[i].toString(); 				    	} 
 	      }	 
+	        
+	        
 	      
 	}
 	
@@ -77,6 +80,8 @@ public class LoginTestCase extends BaseClass {
 		System.out.println(nextTitle);
 		Assert.assertEquals(nextTitle,"Human Resources Management Software | OrangeHRM");
 	}
+	
+	
 	
 	
 	

@@ -5,10 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hybrid.BaseClass;
+import com.util.UtilityClass;
   //java design pattern page object model
 public class LoginPagePom  extends BaseClass{
 	
-	public LoginPagePom () 
+	public LoginPagePom() 
 	{
 		PageFactory.initElements(driver,this);
 	}
@@ -46,22 +47,23 @@ public class LoginPagePom  extends BaseClass{
 	 }
 	 public void setUsername(String username) 
 	 {
-		 userinput.sendKeys(username);
+		 UtilityClass.setText(username, userinput);
+		// userinput.sendKeys(username);
 	 }
 	 
 	 public void setPassword(String userpassword ) 
 	 {
-		 passwordinput.sendKeys(userpassword);
+		 UtilityClass.setText(userpassword,passwordinput);
 	 }
 	 
 	 public void SubmitButton() 
 	 {
-		 submitbutton.click();
+		 UtilityClass.eleClick(submitbutton);
 	 }
 	 
 	 public void LoginPageLink() 
 	 {
-		 LoginPageLink.click();
+		 UtilityClass.eleClick(LoginPageLink);
 	 }
 	 
 	 
