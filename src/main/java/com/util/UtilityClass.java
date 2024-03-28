@@ -1,6 +1,6 @@
 package com.util;
 
-import java.io.File;	
+import java.io.File;		
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
@@ -35,6 +35,7 @@ public class UtilityClass extends BaseClass{
 	public String takeScreenshot(String testname) throws IOException 
 	{   
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
 		Date d = new Date();
 		String currentTime = d.toString().replace(":", "_");
 		String desti =ExcelReaderClass.currentDirectory+"//ScreenshotFolder//"+testname+currentTime+".png";

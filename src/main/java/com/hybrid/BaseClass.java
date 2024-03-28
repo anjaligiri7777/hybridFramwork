@@ -1,6 +1,6 @@
 package com.hybrid;
 
-import java.time.Duration;
+import java.time.Duration;			
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -59,5 +59,6 @@ public class BaseClass {
 	}
 
 	//baseclass upadate
+	//oran
 
 }

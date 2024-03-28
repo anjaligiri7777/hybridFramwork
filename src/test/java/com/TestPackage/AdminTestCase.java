@@ -1,6 +1,6 @@
 package com.TestPackage;
 
-import java.sql.Driver;
+import java.sql.Driver;	
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
